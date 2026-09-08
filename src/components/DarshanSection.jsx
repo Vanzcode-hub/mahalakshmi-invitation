@@ -8,11 +8,11 @@ export default function DarshanSection({ onNext }) {
   const photos = [
     {
       src: '/assets/images/mahalakshmi-1.jpg',
-      caption: 'माँ महालक्ष्मी एवं गौरी माता का मंगलमयी स्वरूप',
+      caption: 'श्री महालक्ष्मी व माता गौरीचे मंगलमय रूप',
     },
     {
       src: '/assets/images/mahalakshmi-2.jpg',
-      caption: 'हमारे निवास पर सजी माँ की अलौकिक छवि',
+      caption: 'आमच्या निवासस्थानी सजलेले मातेचे अलौकिक रूप',
     },
   ];
 
@@ -33,7 +33,7 @@ export default function DarshanSection({ onNext }) {
           <span className="text-xs text-[#936E2B]">✦</span>
         </div>
         <p className="font-traditional text-sm md:text-base text-[#936E2B] tracking-wide">
-          अलौकिक पावन दर्शन
+          अलौकिक मंगल दर्शन
         </p>
       </div>
 
@@ -51,7 +51,7 @@ export default function DarshanSection({ onNext }) {
           <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-inner border border-[#C5A059]/40 group">
             <img
               src={photos[activePhotoIndex].src}
-              alt="माँ महालक्ष्मी दर्शन"
+              alt="श्री महालक्ष्मी दर्शन"
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
 
@@ -74,7 +74,7 @@ export default function DarshanSection({ onNext }) {
                     ? 'w-6 h-2 bg-[#791724]'
                     : 'w-2 h-2 bg-[#C5A059]/50 hover:bg-[#C5A059]'
                 }`}
-                title={`दर्शन छवि ${idx + 1}`}
+                title={`दर्शन प्रतिमा ${idx + 1}`}
               />
             ))}
           </div>
@@ -86,27 +86,27 @@ export default function DarshanSection({ onNext }) {
         {/* Sacred Invitation Verses */}
         <div className="w-full space-y-4 text-center px-4 font-devanagari">
           <p className="text-base md:text-lg text-[#2B211D] leading-relaxed font-medium">
-            हर वर्ष की मंगलमयी परंपरा के साथ,<br />
-            इस वर्ष भी हमारे घर<br />
-            <span className="text-[#791724] font-semibold">माँ महालक्ष्मी एवं गौरी माता</span> के<br />
-            पावन पूजन का शुभ अवसर आया है।
+            दरवर्षीच्या परंपरेप्रमाणे,<br />
+            याही वर्षी आमच्या घरी<br />
+            <span className="text-[#791724] font-semibold">श्री महालक्ष्मी व माता गौरी</span> च्या<br />
+            पूजनाचा पावन व मंगल प्रसंग आला आहे.
           </p>
 
           <p className="text-sm md:text-base text-[#5E4A40] leading-relaxed">
-            माँ महालक्ष्मी की कृपा,<br />
-            सुख, समृद्धि एवं सौभाग्य से<br />
-            हमारा आँगन पुनः धन्य होने जा रहा है।
+            माता महालक्ष्मीच्या असीम कृपेने,<br />
+            सुख, समृद्धी व सौभाग्याने<br />
+            आमचे अंगण पुन्हा एकदा धन्य होत आहे.
           </p>
 
           <p className="text-base md:text-lg text-[#791724] font-semibold leading-relaxed">
-            इस शुभ अवसर की प्रसन्नता को<br />
-            आपके साथ बाँटने के लिए<br />
-            आपको सपरिवार सादर आमंत्रित करते हैं।
+            या मंगल प्रसंगाचा आनंद द्विगुणीत करण्यासाठी<br />
+            आणि मातेचा कृपाप्रसाद घेण्यासाठी<br />
+            आपणांस सपरिवार सस्नेह निमंत्रण!
           </p>
 
           <p className="text-xs md:text-sm text-[#936E2B] italic font-medium pt-1">
-            माँ महालक्ष्मी का आशीर्वाद<br />
-            सदैव आपके एवं आपके परिवार पर बना रहे।
+            माता महालक्ष्मीचा वरदहस्त व कृपाछत्र<br />
+            आपल्यावर व आपल्या परिवारावर सदैव राहो.
           </p>
         </div>
       </div>
@@ -124,7 +124,7 @@ export default function DarshanSection({ onNext }) {
           className="w-full py-3.5 px-8 rounded-full text-base md:text-lg font-devanagari font-semibold tracking-wide bg-gradient-to-r from-[#791724] via-[#A32832] to-[#791724] text-[#FFFDF9] border border-[#E8CA82] shadow-card-lux hover:shadow-gold-glow hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 group"
         >
           <Sparkles className="w-4 h-4 text-[#E8CA82] animate-pulse" />
-          <span>✨ आमंत्रण देखें ✨</span>
+          <span>✨ निमंत्रण पत्रिका पहा ✨</span>
           <ChevronRight className="w-4 h-4 text-[#E8CA82] group-hover:translate-x-1 transition-transform" />
         </button>
       </div>

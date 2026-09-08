@@ -11,11 +11,11 @@ export default function MainInvitation({ onRestart }) {
   const photos = [
     {
       src: '/assets/images/mahalakshmi-1.jpg',
-      label: 'माँ महालक्ष्मी एवं गौरी माता का मंगलमयी स्वरूप',
+      label: 'श्री महालक्ष्मी व माता गौरीचे मंगलमय रूप',
     },
     {
       src: '/assets/images/mahalakshmi-2.jpg',
-      label: 'हमारे निवास पर सजी माँ की पावन झाँकी',
+      label: 'आमच्या निवासस्थानी सजलेले मातेचे अलौकिक रूप',
     },
   ];
 
@@ -38,9 +38,9 @@ export default function MainInvitation({ onRestart }) {
 
   const handleAddToCalendar = () => {
     const event = {
-      title: "श्री महालक्ष्मी गौरी पूजन एवं प्रसाद भोज | टिकले परिवार",
-      description: "माँ महालक्ष्मी एवं गौरी माता के पावन पूजन एवं प्रसाद भोज के शुभ अवसर पर स्नेहिल आमंत्रण।",
-      location: "हमारा स्नेहिल निवास, सिंघानिया नगर, अरनी रोड, यवतमाल",
+      title: "श्री महालक्ष्मी गौरी पूजन व महाप्रसाद भोजन | टिकले परिवार",
+      description: "श्री महालक्ष्मी व माता गौरीच्या पावन पूजन व महाप्रसाद भोजनाच्या शुभ प्रसंगी सस्नेह निमंत्रण।",
+      location: "आमचे निवासस्थान, सिंघानिया नगर, आर्णी रोड, यवतमाळ",
       startTime: "20260918T190000",
       endTime: "20260918T223000",
     };
@@ -51,8 +51,8 @@ export default function MainInvitation({ onRestart }) {
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({
-        title: '॥ श्री महालक्ष्मी गौरी पूजन एवं प्रसाद भोज आमंत्रण ॥',
-        text: 'माँ महालक्ष्मी एवं गौरी माता के पावन पूजन एवं प्रसाद भोज पर आपका सपरिवार सादर आमंत्रण - विनोद एवं कल्पना टिकले',
+        title: '॥ श्री महालक्ष्मी गौरी पूजन व महाप्रसाद भोजन आमंत्रण ॥',
+        text: 'श्री महालक्ष्मी व माता गौरीच्या पावन पूजन व महाप्रसाद भोजनास आपले सपरिवार सस्नेह निमंत्रण - श्री विनोदराव टिकले व सौ. कल्पना टिकले',
         url: window.location.href,
       }).catch(() => {});
     } else {
@@ -76,7 +76,7 @@ export default function MainInvitation({ onRestart }) {
             <span className="text-[#FFE082] text-xs">✦</span>
           </div>
           <p className="font-devanagari text-xs md:text-sm text-[#E5B25D] tracking-wide pt-1">
-            अलौकिक पावन दर्शन
+            अलौकिक मंगल दर्शन
           </p>
         </div>
 
@@ -125,27 +125,27 @@ export default function MainInvitation({ onRestart }) {
         {/* Sacred Darshan Verses */}
         <div className="space-y-3.5 font-devanagari text-[#F8E2B0] text-center px-2">
           <p className="text-sm md:text-base leading-relaxed">
-            हर वर्ष की मंगलमयी परंपरा के साथ,<br />
-            इस वर्ष भी हमारे घर<br />
-            <span className="text-[#FFE082] font-semibold">माँ महालक्ष्मी एवं गौरी माता</span> के<br />
-            पावन पूजन का शुभ अवसर आया है।
+            दरवर्षीच्या परंपरेप्रमाणे,<br />
+            याही वर्षी आमच्या घरी<br />
+            <span className="text-[#FFE082] font-semibold">श्री महालक्ष्मी व माता गौरी</span> च्या<br />
+            पूजनाचा पावन व मंगल प्रसंग आला आहे.
           </p>
 
           <p className="text-xs md:text-sm text-[#E5B25D] leading-relaxed">
-            माँ महालक्ष्मी की कृपा,<br />
-            सुख, समृद्धि एवं सौभाग्य से<br />
-            हमारा आँगन पुनः धन्य होने जा रहा है।
+            माता महालक्ष्मीच्या असीम कृपेने,<br />
+            सुख, समृद्धी व सौभाग्याने<br />
+            आमचे अंगण पुन्हा एकदा धन्य होत आहे.
           </p>
 
           <p className="text-sm md:text-base text-[#FFFDF8] font-semibold leading-relaxed">
-            इस शुभ अवसर की प्रसन्नता को<br />
-            आपके साथ बाँटने के लिए<br />
-            आपको सपरिवार सादर आमंत्रित करते हैं।
+            या मंगल प्रसंगाचा आनंद द्विगुणीत करण्यासाठी<br />
+            आणि मातेचा कृपाप्रसाद घेण्यासाठी<br />
+            आपणांस सपरिवार सस्नेह निमंत्रण!
           </p>
 
           <p className="text-xs md:text-sm text-[#FFE082] italic font-medium pt-1">
-            माँ महालक्ष्मी का आशीर्वाद<br />
-            सदैव आपके एवं आपके परिवार पर बना रहे।
+            माता महालक्ष्मीचा वरदहस्त व कृपाछत्र<br />
+            आपल्यावर व आपल्या परिवारावर सदैव राहो.
           </p>
         </div>
       </section>
@@ -158,7 +158,7 @@ export default function MainInvitation({ onRestart }) {
             🌸 श्री महालक्ष्मी गौरी पूजन 🌸
           </h2>
           <p className="font-devanagari text-xs text-[#E5B25D]">
-            एवं स्नेहिल प्रसाद भोज आमंत्रण
+            व सस्नेह महाप्रसाद भोजन निमंत्रण
           </p>
         </div>
 
@@ -169,25 +169,25 @@ export default function MainInvitation({ onRestart }) {
             <Calendar className="w-5 h-5 text-[#FFE082] mb-1" />
             <span className="text-[11px] text-[#E5B25D]">शुभ दिनांक</span>
             <span className="text-sm md:text-base font-bold text-[#FFFDF8]">
-              18 सितंबर 2026
+              १८ सप्टेंबर २०२६
             </span>
           </div>
 
           {/* Time */}
           <div className="flex flex-col items-center justify-center p-2.5 rounded-xl bg-[#1A0D05]/60 border border-[#E5B25D]/20">
             <Clock className="w-5 h-5 text-[#FFE082] mb-1" />
-            <span className="text-[11px] text-[#E5B25D]">शुभ समय</span>
+            <span className="text-[11px] text-[#E5B25D]">शुभ वेळ</span>
             <span className="text-sm md:text-base font-bold text-[#FFFDF8]">
-              सायं 7:00 बजे
+              सायंकाळी ७:०० वा.
             </span>
           </div>
 
           {/* Venue */}
           <div className="flex flex-col items-center justify-center p-2.5 rounded-xl bg-[#1A0D05]/60 border border-[#E5B25D]/20">
             <MapPin className="w-5 h-5 text-[#FFE082] mb-1" />
-            <span className="text-[11px] text-[#E5B25D]">स्थान</span>
+            <span className="text-[11px] text-[#E5B25D]">स्थळ</span>
             <span className="text-sm md:text-base font-bold text-[#FFFDF8]">
-              हमारा स्नेहिल निवास
+              स्नेहिल निवास
             </span>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function MainInvitation({ onRestart }) {
         {/* Address & Quick Map/Calendar Buttons */}
         <div className="text-center font-devanagari space-y-3">
           <p className="text-sm md:text-base text-[#F8E2B0]">
-            📍 <span className="font-semibold text-[#FFFDF8]">सिंघानिया नगर, अरनी रोड, यवतमाल</span>
+            📍 <span className="font-semibold text-[#FFFDF8]">सिंघानिया नगर, आर्णी रोड, यवतमाळ</span>
           </p>
 
           <div className="flex justify-center items-center gap-3">
@@ -204,14 +204,14 @@ export default function MainInvitation({ onRestart }) {
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-devanagari font-medium text-[#FFE082] bg-[#381B0E] hover:bg-[#502410] border border-[#E5B25D]/40 transition-colors"
             >
               <Map className="w-3.5 h-3.5" />
-              <span>गूगल मैप्स पर देखें</span>
+              <span>गूगल मॅप्सवर पहा</span>
             </button>
             <button
               onClick={handleAddToCalendar}
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-devanagari font-medium text-[#FFE082] bg-[#381B0E] hover:bg-[#502410] border border-[#E5B25D]/40 transition-colors"
             >
               <CalendarPlus className="w-3.5 h-3.5" />
-              <span>कैलेंडर में जोड़ें</span>
+              <span>कॅलेंडरमध्ये जोडा</span>
             </button>
           </div>
         </div>
@@ -221,25 +221,23 @@ export default function MainInvitation({ onRestart }) {
         {/* Invitation Text */}
         <div className="space-y-3.5 text-center font-devanagari text-[#F8E2B0]">
           <p className="text-sm md:text-base leading-relaxed">
-            माँ महालक्ष्मी एवं गौरी माता के<br />
-            पावन पूजन एवं प्रसाद भोज के शुभ अवसर पर<br />
-            आपकी स्नेहमयी उपस्थिति हमारे लिए<br />
-            <span className="text-[#FFE082] font-semibold">अत्यंत हर्ष एवं सौभाग्य का विषय होगी।</span>
+            माता महालक्ष्मी व गौरी पूजनाच्या<br />
+            पावन पर्वावर आणि महाप्रसाद भोजनास<br />
+            आपली स्नेहमयी उपस्थिती आमच्यासाठी<br />
+            <span className="text-[#FFE082] font-semibold">अत्यंत आनंद व सौभाग्याची ठरेल.</span>
           </p>
 
           <p className="text-xs md:text-sm text-[#E5B25D] leading-relaxed">
-            अतः आपसे सादर निवेदन है कि<br />
-            इस शुभ अवसर पर पधारकर<br />
-            माँ महालक्ष्मी का आशीर्वाद प्राप्त करें<br />
-            एवं हमारे प्रसाद भोज को अपनी उपस्थिति से<br />
-            सुस्वादु एवं मंगलमय बनाएँ।
+            तरी आपण सर्वांनी सहकुटुंब सहपरिवार उपस्थित राहून<br />
+            माता महालक्ष्मीचे दर्शन व कृपाप्रसाद ग्रहण करावा,<br />
+            हीच नम्र विनंती.
           </p>
 
           {/* Highlighted Golden Quote */}
           <div className="p-4 rounded-2xl bg-gradient-to-r from-[#381B0E]/80 via-[#502410]/90 to-[#381B0E]/80 border border-[#E5B25D]/60 shadow-[0_0_20px_rgba(229,178,93,0.15)] my-4">
             <p className="font-devanagari text-base md:text-lg text-[#FFE082] font-bold tracking-wide">
-              "आपका आगमन ही हमारे लिए<br />
-              सबसे सुंदर उपहार है।"
+              "आपले आगमन हेच आमच्यासाठी<br />
+              सर्वात मोठे व सुंदर आशीर्वाद आहे."
             </p>
           </div>
         </div>
@@ -252,7 +250,7 @@ export default function MainInvitation({ onRestart }) {
         </div>
 
         <h3 className="font-devanagari text-lg md:text-xl font-bold text-[#FFFDF8]">
-          क्या आप हमारे इस शुभ अवसर पर पधारेंगे?
+          आपण या मंगल प्रसंगी उपस्थित राहणार का?
         </h3>
 
         <div className="max-w-md mx-auto pt-1">
@@ -268,12 +266,12 @@ export default function MainInvitation({ onRestart }) {
             {hasRSVPed ? (
               <span className="flex items-center justify-center gap-2">
                 <Heart className="w-5 h-5 text-[#FFE082] fill-current animate-pulse" />
-                <span>✨ आपकी मंगल उपस्थिति की प्रतीक्षा रहेगी ✨</span>
+                <span>✨ मनःपूर्वक धन्यवाद! आपली वाट पाहत आहोत ✨</span>
               </span>
             ) : (
               <span className="flex items-center justify-center gap-2">
                 <span>🌸</span>
-                <span>हाँ, अवश्य पधारूँगा/पधारूँगी</span>
+                <span>होय, मी नक्की येणार</span>
                 <span>🌸</span>
               </span>
             )}
@@ -293,27 +291,27 @@ export default function MainInvitation({ onRestart }) {
             <span className="text-[#FFE082] text-xs">✦</span>
           </div>
           <p className="font-devanagari text-xs text-[#E5B25D]">
-            पावन प्रार्थना एवं मंगल कामना
+            पावन प्रार्थना व मंगल कामना
           </p>
         </div>
 
         {/* Prayer Verse */}
         <div className="space-y-3 font-devanagari text-[#F8E2B0] text-center">
           <p className="text-xs md:text-sm text-[#E5B25D] font-medium">
-            माँ महालक्ष्मी के चरणों में हमारी यही प्रार्थना है कि —
+            माता महालक्ष्मीच्या चरणी आमची हीच प्रार्थना आहे की —
           </p>
 
           <div className="p-4 rounded-2xl bg-[#2B150A]/70 border border-[#E5B25D]/30 text-sm md:text-base leading-relaxed space-y-1 text-[#FFFDF8] font-medium">
-            <p>आपके जीवन में सुख हो,</p>
-            <p>घर में समृद्धि हो,</p>
-            <p>मन में शांति हो</p>
-            <p className="text-[#FFE082] font-semibold">और हर कदम पर माँ का आशीर्वाद हो।</p>
+            <p>आपल्या जीवनात सुख असो,</p>
+            <p>घरात समृद्धी नांदावी,</p>
+            <p>मनात शांतता लाभो</p>
+            <p className="text-[#FFE082] font-semibold">आणि प्रत्येक पावलावर मातेचा आशीर्वाद असो.</p>
           </div>
 
           <p className="text-sm md:text-base text-[#F8E2B0] leading-relaxed pt-2">
-            माँ महालक्ष्मी एवं गौरी माता<br />
-            आपके परिवार को सदैव<br />
-            <span className="text-[#FFE082] font-semibold">सुख, सौभाग्य और समृद्धि</span> प्रदान करें।
+            माता महालक्ष्मी व गौरी माता<br />
+            आपल्या परिवारास सदैव<br />
+            <span className="text-[#FFE082] font-semibold">सुख, समृद्धी आणि उत्तम आरोग्य</span> प्रदान करो.
           </p>
         </div>
 
@@ -322,15 +320,15 @@ export default function MainInvitation({ onRestart }) {
         {/* Hosts Presentation */}
         <div className="pt-1 space-y-3">
           <p className="font-devanagari text-base md:text-lg font-bold text-[#FFE082]">
-            🙏 सादर आमंत्रण एवं शुभकामनाएँ 🙏
+            🙏 सस्नेह निमंत्रक 🙏
           </p>
 
           <div className="inline-block px-8 py-3 rounded-2xl bg-[#381B0E]/90 border-2 border-[#E5B25D] shadow-lg">
             <p className="font-devanagari text-lg md:text-xl font-bold text-[#FFFDF8]">
-              विनोद टिकले एवं कल्पना टिकले
+              श्री विनोदराव टिकले व सौ. कल्पना टिकले
             </p>
             <p className="font-devanagari text-xs text-[#E5B25D] font-medium mt-0.5">
-              सप्रेम निमंत्रण
+              सस्नेह निमंत्रक - टिकले परिवार, यवतमाळ
             </p>
           </div>
         </div>
@@ -344,12 +342,12 @@ export default function MainInvitation({ onRestart }) {
             {copied ? (
               <>
                 <Check className="w-4 h-4 text-green-400" />
-                <span className="text-green-300">लिंक कॉपी हो गया!</span>
+                <span className="text-green-300">लिंक कॉपी झाली!</span>
               </>
             ) : (
               <>
                 <Share2 className="w-4 h-4 text-[#FFE082]" />
-                <span>आमंत्रण साझा करें</span>
+                <span>निमंत्रण शेअर करा</span>
               </>
             )}
           </button>
@@ -359,7 +357,7 @@ export default function MainInvitation({ onRestart }) {
             className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs md:text-sm font-devanagari font-medium text-[#E5B25D] bg-[#2B150A] hover:bg-[#381B0E] border border-[#E5B25D]/30 transition-all active:scale-95"
           >
             <RotateCcw className="w-3.5 h-3.5" />
-            <span>पुनः द्वार देखें ↺</span>
+            <span>पुन्हा पहा ↺</span>
           </button>
         </div>
       </section>

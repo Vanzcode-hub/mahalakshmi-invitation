@@ -13,9 +13,9 @@ export default function InvitationScreen({ onConfirmRSVP, onPrev }) {
 
   const handleAddToCalendar = () => {
     const event = {
-      title: "श्री महालक्ष्मी गौरी पूजन एवं प्रसाद भोज | टिकले परिवार",
-      description: "माँ महालक्ष्मी एवं गौरी माता के पावन पूजन एवं प्रसाद भोज के शुभ अवसर पर स्नेहिल आमंत्रण।",
-      location: "हमारा स्नेहिल निवास, सिंघानिया नगर, अरनी रोड, यवतमाल",
+      title: "श्री महालक्ष्मी गौरी पूजन व महाप्रसाद भोजन | टिकले परिवार",
+      description: "श्री महालक्ष्मी व माता गौरीच्या पावन पूजन व महाप्रसाद भोजनाच्या शुभ प्रसंगी सस्नेह निमंत्रण।",
+      location: "आमचे निवासस्थान, सिंघानिया नगर, आर्णी रोड, यवतमाळ",
       startTime: "20260918T190000",
       endTime: "20260918T223000",
     };
@@ -48,7 +48,7 @@ export default function InvitationScreen({ onConfirmRSVP, onPrev }) {
           🌸 श्री महालक्ष्मी गौरी पूजन 🌸
         </h2>
         <p className="font-devanagari text-xs md:text-sm text-[#F5C862] font-semibold">
-          एवं स्नेहिल प्रसाद भोज आमंत्रण
+          व सस्नेह महाप्रसाद भोजन निमंत्रण
         </p>
       </div>
 
@@ -61,23 +61,23 @@ export default function InvitationScreen({ onConfirmRSVP, onPrev }) {
             <Calendar className="w-5 h-5 text-[#FFF2A8] mb-1" />
             <span className="text-[11px] text-[#F5C862] font-medium">शुभ दिनांक</span>
             <span className="text-sm md:text-base font-bold text-[#FFFDF8] leading-tight mt-0.5">
-              18 सितंबर 2026
+              १८ सप्टेंबर २०२६
             </span>
           </div>
 
           {/* Time */}
           <div className="flex flex-col items-center justify-center p-2 rounded-xl bg-[#140802]/70 border border-[#F5C862]/30">
             <Clock className="w-5 h-5 text-[#FFF2A8] mb-1" />
-            <span className="text-[11px] text-[#F5C862] font-medium">शुभ समय</span>
+            <span className="text-[11px] text-[#F5C862] font-medium">शुभ वेळ</span>
             <span className="text-sm md:text-base font-bold text-[#FFFDF8] leading-tight mt-0.5">
-              सायं 7:00 बजे
+              सायंकाळी ७:०० वा.
             </span>
           </div>
 
           {/* Venue */}
           <div className="flex flex-col items-center justify-center p-2 rounded-xl bg-[#140802]/70 border border-[#F5C862]/30">
             <MapPin className="w-5 h-5 text-[#FFF2A8] mb-1" />
-            <span className="text-[11px] text-[#F5C862] font-medium">स्थान</span>
+            <span className="text-[11px] text-[#F5C862] font-medium">स्थळ</span>
             <span className="text-sm md:text-base font-bold text-[#FFFDF8] leading-tight mt-0.5">
               स्नेहिल निवास
             </span>
@@ -87,7 +87,7 @@ export default function InvitationScreen({ onConfirmRSVP, onPrev }) {
         {/* Address Line & Quick Actions */}
         <div className="text-center font-devanagari space-y-2.5">
           <p className="text-sm md:text-base text-[#FFF4B8]">
-            📍 <span className="font-bold text-[#FFFDF8]">सिंघानिया नगर, अरनी रोड, यवतमाल</span>
+            📍 <span className="font-bold text-[#FFFDF8]">सिंघानिया नगर, आर्णी रोड, यवतमाळ</span>
           </p>
 
           <div className="flex justify-center items-center gap-2.5 pt-0.5">
@@ -96,42 +96,40 @@ export default function InvitationScreen({ onConfirmRSVP, onPrev }) {
               className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-devanagari font-semibold text-[#FFF2A8] bg-[#381B0E] hover:bg-[#502410] border border-[#F5C862]/50 shadow-sm transition-colors"
             >
               <Map className="w-3.5 h-3.5 text-[#F5C862]" />
-              <span>गूगल मैप्स पर देखें</span>
+              <span>गूगल मॅप्सवर पहा</span>
             </button>
             <button
               onClick={handleAddToCalendar}
               className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-devanagari font-semibold text-[#FFF2A8] bg-[#381B0E] hover:bg-[#502410] border border-[#F5C862]/50 shadow-sm transition-colors"
             >
               <CalendarPlus className="w-3.5 h-3.5 text-[#F5C862]" />
-              <span>कैलेंडर में जोड़ें</span>
+              <span>कॅलेंडरमध्ये जोडा</span>
             </button>
           </div>
         </div>
 
         <LotusDivider />
 
-        {/* Invitation Text */}
+        {/* Invitation Text in Marathi */}
         <div className="space-y-3 text-center font-devanagari text-[#FFFDF8] px-2">
           <p className="text-sm md:text-base leading-relaxed">
-            माँ महालक्ष्मी एवं गौरी माता के<br />
-            पावन पूजन एवं प्रसाद भोज के शुभ अवसर पर<br />
-            आपकी स्नेहमयी उपस्थिति हमारे लिए<br />
-            <span className="text-[#FFF2A8] font-bold">अत्यंत हर्ष एवं सौभाग्य का विषय होगी।</span>
+            माता महालक्ष्मी व गौरी पूजनाच्या<br />
+            पावन पर्वावर आणि महाप्रसाद भोजनास<br />
+            आपली स्नेहमयी उपस्थिती आमच्यासाठी<br />
+            <span className="text-[#FFF2A8] font-bold">अत्यंत आनंद व सौभाग्याची ठरेल.</span>
           </p>
 
           <p className="text-xs md:text-sm text-[#F5C862] leading-relaxed">
-            अतः आपसे सादर निवेदन है कि<br />
-            इस शुभ अवसर पर पधारकर<br />
-            माँ महालक्ष्मी का आशीर्वाद प्राप्त करें<br />
-            एवं हमारे प्रसाद भोज को अपनी उपस्थिति से<br />
-            सुस्वादु एवं मंगलमय बनाएँ।
+            तरी आपण सर्वांनी सहकुटुंब सहपरिवार उपस्थित राहून<br />
+            माता महालक्ष्मीचे दर्शन व कृपाप्रसाद ग्रहण करावा,<br />
+            हीच नम्र विनंती.
           </p>
 
-          {/* Highlighted Quote Box - Large & Prominent */}
+          {/* Highlighted Quote Box */}
           <div className="p-4 rounded-2xl bg-gradient-to-r from-[#381B0E]/95 via-[#5A240E]/95 to-[#381B0E]/95 border-2 border-[#F5C862]/80 shadow-[0_0_20px_rgba(245,200,98,0.25)] my-3">
             <p className="font-devanagari text-base md:text-lg text-[#FFF2A8] font-bold tracking-wide leading-snug">
-              "आपका आगमन ही हमारे लिए<br />
-              सबसे सुंदर उपहार है।"
+              "आपले आगमन हेच आमच्यासाठी<br />
+              सर्वात मोठे व सुंदर आशीर्वाद आहे."
             </p>
           </div>
         </div>
@@ -139,7 +137,7 @@ export default function InvitationScreen({ onConfirmRSVP, onPrev }) {
         {/* Integrated RSVP Section directly on this invitation card */}
         <div className="pt-2 text-center space-y-3 border-t border-[#F5C862]/30">
           <p className="font-devanagari text-sm md:text-base font-bold text-[#FFFDF8]">
-            क्या आप हमारे इस शुभ अवसर पर पधारेंगे?
+            आपण या मंगल प्रसंगी उपस्थित राहणार का?
           </p>
 
           <button
@@ -154,12 +152,12 @@ export default function InvitationScreen({ onConfirmRSVP, onPrev }) {
             {isAccepted ? (
               <span className="flex items-center justify-center gap-2">
                 <Heart className="w-5 h-5 text-[#FFF2A8] fill-current animate-pulse" />
-                <span>✨ हार्दिक धन्यवाद! पधारने की प्रतीक्षा रहेगी ✨</span>
+                <span>✨ मनःपूर्वक धन्यवाद! आपली वाट पाहत आहोत ✨</span>
               </span>
             ) : (
               <span className="flex items-center justify-center gap-2">
                 <span>🌸</span>
-                <span>हाँ, अवश्य पधारूँगा/पधारूँगी</span>
+                <span>होय, मी नक्की येणार</span>
                 <span>🌸</span>
               </span>
             )}
@@ -174,7 +172,7 @@ export default function InvitationScreen({ onConfirmRSVP, onPrev }) {
           className="py-2 px-4 rounded-full text-xs font-devanagari font-medium text-[#F5C862] bg-[#2E1408]/85 hover:bg-[#381B0E] border border-[#F5C862]/40 transition-all flex items-center gap-1 shadow-sm"
         >
           <ChevronLeft className="w-3.5 h-3.5" />
-          <span>दर्शन पर लौटें</span>
+          <span>दर्शन पृष्ठावर परत जा</span>
         </button>
       </div>
     </div>

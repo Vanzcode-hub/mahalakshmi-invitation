@@ -44,11 +44,11 @@ export default function RSVPScreen({ onConfirm, onPrev }) {
 
         <div className="space-y-2 font-devanagari">
           <h3 className="text-xl md:text-2xl font-bold text-[#FFFDF8] leading-snug">
-            क्या आप हमारे इस शुभ अवसर पर पधारेंगे?
+            आपण या मंगल प्रसंगी उपस्थित राहणार का?
           </h3>
           <p className="text-xs md:text-sm text-[#F8E2B0] leading-relaxed">
-            आपकी उपस्थिति हमारे पूजन एवं प्रसाद भोज को कृतार्थ करेगी।<br />
-            कृपया अपनी स्वीकृति प्रदान करें।
+            आपली स्नेहमयी उपस्थिती आमच्या पूजनास व महाप्रसाद भोजनास शोभा देईल.<br />
+            कृपया आपली स्वीकृती कळवावी.
           </p>
         </div>
 
@@ -65,12 +65,12 @@ export default function RSVPScreen({ onConfirm, onPrev }) {
             {isAccepted ? (
               <span className="flex items-center justify-center gap-2">
                 <Heart className="w-5 h-5 text-[#FFE082] fill-current animate-pulse" />
-                <span>✨ हार्दिक धन्यवाद! पधारने की प्रतीक्षा रहेगी ✨</span>
+                <span>✨ मनःपूर्वक धन्यवाद! आपली वाट पाहत आहोत ✨</span>
               </span>
             ) : (
               <span className="flex items-center justify-center gap-2">
                 <span>🌸</span>
-                <span>हाँ, अवश्य पधारूँगा/पधारूँगी</span>
+                <span>होय, मी नक्की येणार</span>
                 <span>🌸</span>
               </span>
             )}
@@ -78,7 +78,7 @@ export default function RSVPScreen({ onConfirm, onPrev }) {
         </div>
 
         <p className="font-devanagari text-xs text-[#E5B25D] opacity-90 pt-1">
-          सादर निमंत्रक: विनोद एवं कल्पना टिकले
+          सस्नेह निमंत्रक: श्री विनोदराव टिकले व सौ. कल्पना टिकले
         </p>
       </div>
 
@@ -89,7 +89,7 @@ export default function RSVPScreen({ onConfirm, onPrev }) {
           className="py-2 px-4 rounded-full text-xs font-devanagari font-medium text-[#E5B25D] bg-[#2B150A]/80 hover:bg-[#381B0E] border border-[#E5B25D]/40 transition-all flex items-center gap-1"
         >
           <ChevronLeft className="w-3.5 h-3.5" />
-          <span>पीछे</span>
+          <span>मागे</span>
         </button>
 
         <div className="flex items-center gap-6">

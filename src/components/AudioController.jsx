@@ -19,7 +19,7 @@ export default function AudioController({ isAudioActive, onToggle }) {
     <div className="fixed top-3 right-3 z-50">
       <button
         onClick={handleToggle}
-        title={isPlaying ? 'संगीत रोकें' : 'संगीत चलाएँ'}
+        title={isPlaying ? 'संगीत थांबवा' : 'संगीत सुरू करा'}
         className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1A0D05]/85 backdrop-blur-md border border-[#E5B25D]/60 shadow-[0_4px_20px_rgba(0,0,0,0.6)] text-[#FFE082] hover:bg-[#2A150A] transition-all duration-300 transform active:scale-95 group"
       >
         <span className="relative flex h-2.5 w-2.5">
@@ -36,7 +36,7 @@ export default function AudioController({ isAudioActive, onToggle }) {
         )}
 
         <span className="text-[11px] font-medium font-devanagari text-[#F8E2B0] group-hover:text-[#FFE082]">
-          {isPlaying ? 'भक्ति संगीत' : 'संगीत'}
+          {isPlaying ? 'भक्ती संगीत' : 'संगीत'}
         </span>
 
         {/* Animated Sound Wave Bars */}

@@ -47,10 +47,10 @@ export default function TirupatiGate({ onOpenGate }) {
             ॥ श्री महालक्ष्म्यै नमः ॥
           </h1>
           <p className="font-devanagari text-base md:text-xl text-[#FFF4B8] font-medium drop-shadow-md">
-            माँ महालक्ष्मी के पावन आगमन पर
+            माता महालक्ष्मी व गौरीच्या आगमन प्रसंगी
           </p>
           <p className="font-traditional text-lg md:text-2xl text-[#F5C862] tracking-wide drop-shadow">
-            सादर आमंत्रण
+            सस्नेह निमंत्रण
           </p>
         </div>
       </div>
@@ -196,19 +196,19 @@ export default function TirupatiGate({ onOpenGate }) {
           {isOpening ? (
             <span className="flex items-center justify-center gap-2">
               <span className="animate-spin text-base">✨</span>
-              द्वार खुल रहे हैं...
+              द्वार उघडत आहेत...
             </span>
           ) : (
             <span className="flex items-center justify-center gap-2">
               <span>🌸</span>
-              <span>द्वार खोलें</span>
+              <span>द्वार उघडा</span>
               <span>🌸</span>
             </span>
           )}
         </button>
 
         <p className="font-devanagari text-xs md:text-sm text-[#F5C862] mt-2 font-medium drop-shadow-md">
-          पावन दर्शन एवं आमंत्रण के लिए स्पर्श करें
+          पावन दर्शन व निमंत्रणासाठी स्पर्श करा
         </p>
       </div>
     </div>

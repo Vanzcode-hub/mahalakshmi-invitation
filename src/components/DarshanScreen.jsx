@@ -8,11 +8,11 @@ export default function DarshanScreen({ onNext }) {
   const photos = [
     {
       src: '/assets/images/mahalakshmi-1.jpg',
-      label: 'माँ महालक्ष्मी एवं गौरी माता का मंगलमयी स्वरूप',
+      label: 'श्री महालक्ष्मी व माता गौरीचे मंगलमय रूप',
     },
     {
       src: '/assets/images/mahalakshmi-2.jpg',
-      label: 'हमारे निवास पर सजी माँ की अलौकिक छवि',
+      label: 'आमच्या निवासस्थानी सजलेले मातेचे अलौकिक रूप',
     },
   ];
 
@@ -28,7 +28,7 @@ export default function DarshanScreen({ onNext }) {
           <span className="text-[#FFE082] text-sm">✦</span>
         </div>
         <p className="font-devanagari text-sm md:text-base text-[#F5C862] font-semibold tracking-wide">
-          अलौकिक पावन दर्शन
+          अलौकिक मंगल दर्शन
         </p>
       </div>
 
@@ -76,30 +76,30 @@ export default function DarshanScreen({ onNext }) {
           </div>
         </div>
 
-        {/* Sacred Devotional Verses - Enhanced Visibility & Sizing */}
+        {/* Sacred Devotional Verses - Enhanced Visibility & Sizing in Marathi */}
         <div className="space-y-3.5 font-devanagari text-center px-2">
           <p className="text-base md:text-lg leading-relaxed text-[#FFFDF8] font-medium">
-            हर वर्ष की मंगलमयी परंपरा के साथ,<br />
-            इस वर्ष भी हमारे घर<br />
-            <span className="text-[#FFF2A8] font-bold">माँ महालक्ष्मी एवं गौरी माता</span> के<br />
-            पावन पूजन का शुभ अवसर आया है।
+            दरवर्षीच्या परंपरेप्रमाणे,<br />
+            याही वर्षी आमच्या घरी<br />
+            <span className="text-[#FFF2A8] font-bold">श्री महालक्ष्मी व माता गौरी</span> च्या<br />
+            पूजनाचा पावन व मंगल प्रसंग आला आहे.
           </p>
 
           <p className="text-sm md:text-base text-[#F5C862] leading-relaxed font-medium">
-            माँ महालक्ष्मी की कृपा,<br />
-            सुख, समृद्धि एवं सौभाग्य से<br />
-            हमारा आँगन पुनः धन्य होने जा रहा है।
+            माता महालक्ष्मीच्या असीम कृपेने,<br />
+            सुख, समृद्धी व सौभाग्याने<br />
+            आमचे अंगण पुन्हा एकदा धन्य होत आहे.
           </p>
 
           <p className="text-base md:text-lg text-[#FFFFFF] font-bold leading-relaxed pt-1">
-            इस शुभ अवसर की प्रसन्नता को<br />
-            आपके साथ बाँटने के लिए<br />
-            आपको सपरिवार सादर आमंत्रित करते हैं।
+            या मंगल प्रसंगाचा आनंद द्विगुणीत करण्यासाठी<br />
+            आणि मातेचा कृपाप्रसाद घेण्यासाठी<br />
+            आपणांस सपरिवार सस्नेह निमंत्रण!
           </p>
 
           <p className="text-xs md:text-sm text-[#FFF2A8] italic font-semibold pt-1">
-            माँ महालक्ष्मी का आशीर्वाद<br />
-            सदैव आपके एवं आपके परिवार पर बना रहे।
+            माता महालक्ष्मीचा वरदहस्त व कृपाछत्र<br />
+            आपल्यावर व आपल्या परिवारावर सदैव राहो.
           </p>
         </div>
       </div>
@@ -111,7 +111,7 @@ export default function DarshanScreen({ onNext }) {
           className="w-full py-3.5 px-8 rounded-full text-base md:text-lg font-devanagari font-bold tracking-wide bg-gradient-to-r from-[#80131E] via-[#A81C2A] to-[#80131E] text-[#FFFDF8] border-2 border-[#F5C862] shadow-[0_12px_30px_rgba(0,0,0,0.8)] hover:shadow-[0_0_30px_rgba(245,200,98,0.7)] hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 group"
         >
           <Sparkles className="w-5 h-5 text-[#FFF2A8] animate-pulse" />
-          <span>✨ आमंत्रण विवरण देखें ✨</span>
+          <span>✨ निमंत्रण पत्रिका पहा ✨</span>
           <ChevronRight className="w-5 h-5 text-[#FFF2A8] group-hover:translate-x-1 transition-transform" />
         </button>
       </div>

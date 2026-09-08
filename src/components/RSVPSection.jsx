@@ -58,24 +58,24 @@ export default function RSVPSection({ onConfirmRSVP }) {
         </div>
 
         <h3 className="font-devanagari text-xl md:text-2xl text-[#791724] font-bold mb-3 leading-snug">
-          क्या आप हमारे इस शुभ अवसर पर पधारेंगे?
+          आपण या मंगल प्रसंगी उपस्थित राहणार का?
         </h3>
 
         <p className="font-devanagari text-xs md:text-sm text-[#5E4A40] leading-relaxed mb-6">
-          आपकी उपस्थिति हमारे पूजन एवं प्रसाद भोज को कृतार्थ करेगी।<br />
-          कृपया अपनी स्वीकृति प्रदान करें।
+          आपली स्नेहमयी उपस्थिती आमच्या पूजनास व महाप्रसाद भोजनास शोभा देईल.<br />
+          कृपया आपली स्वीकृती कळवावी.
         </p>
 
         {/* Optional Guest Name Input for Personalized Blessing */}
         <div className="mb-6 text-left">
           <label className="block font-devanagari text-xs text-[#936E2B] font-medium mb-1.5 ml-1">
-            आपका शुभ नाम (वैकल्पिक):
+            आपले शुभ नाव (ऐच्छिक):
           </label>
           <input
             type="text"
             value={guestName}
             onChange={(e) => setGuestName(e.target.value)}
-            placeholder="उदा. शर्मा परिवार / राजेश जी"
+            placeholder="उदा. जोशी परिवार / राहुल जी"
             className="w-full px-4 py-2.5 rounded-xl bg-[#FAF4EB] border border-[#C5A059]/50 text-[#2B211D] font-devanagari text-sm placeholder-[#936E2B]/50 focus:outline-none focus:ring-2 focus:ring-[#791724]/40 transition-all text-center"
           />
         </div>
@@ -93,19 +93,19 @@ export default function RSVPSection({ onConfirmRSVP }) {
           {isSubmitted ? (
             <span className="flex items-center justify-center gap-2">
               <Heart className="w-5 h-5 text-[#FFD700] fill-current animate-pulse" />
-              <span>हार्दिक धन्यवाद! माँ की कृपा बनी रहे</span>
+              <span>मनःपूर्वक धन्यवाद! मातेची कृपा सदैव राहो</span>
             </span>
           ) : (
             <span className="flex items-center justify-center gap-2">
               <span>🌸</span>
-              <span>हाँ, अवश्य पधारूँगा/पधारूँगी</span>
+              <span>होय, मी नक्की येणार</span>
               <span>🌸</span>
             </span>
           )}
         </button>
 
         <p className="font-devanagari text-[11px] text-[#936E2B] mt-4 opacity-80">
-          सादर निमंत्रक: विनोद एवं कल्पना टिकले
+          सस्नेह निमंत्रक: श्री विनोदराव टिकले व सौ. कल्पना टिकले
         </p>
       </div>
 

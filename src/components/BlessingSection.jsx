@@ -9,8 +9,8 @@ export default function BlessingSection({ guestName = '', onRestart }) {
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({
-        title: '॥ श्री महालक्ष्मी गौरी पूजन एवं प्रसाद भोजन आमंत्रण ॥',
-        text: 'माँ महालक्ष्मी एवं गौरी माता के पावन पूजन एवं प्रसाद भोज पर आपका सपरिवार सादर आमंत्रण - विनोद एवं कल्पना टिकले',
+        title: '॥ श्री महालक्ष्मी गौरी पूजन व महाप्रसाद भोजन आमंत्रण ॥',
+        text: 'श्री महालक्ष्मी व माता गौरीच्या पावन पूजन व महाप्रसाद भोजनास आपले सपरिवार सस्नेह निमंत्रण - श्री विनोदराव टिकले व सौ. कल्पना टिकले',
         url: window.location.href,
       }).catch(() => {});
     } else {
@@ -37,7 +37,7 @@ export default function BlessingSection({ guestName = '', onRestart }) {
           <span className="text-xs text-[#936E2B]">✦</span>
         </div>
         <p className="font-traditional text-xs md:text-sm text-[#936E2B] tracking-wide">
-          पावन आशीर्वाद एवं मंगल कामना
+          पावन प्रार्थना व मंगल कामना
         </p>
       </div>
 
@@ -48,7 +48,7 @@ export default function BlessingSection({ guestName = '', onRestart }) {
           <div className="absolute inset-0 bg-[#FFD700]/20 rounded-full blur-xl animate-pulse" />
           <img
             src="/assets/images/mahalakshmi-2.jpg"
-            alt="माँ महालक्ष्मी एवं गौरी माता"
+            alt="श्री महालक्ष्मी व माता गौरी"
             className="w-full h-full object-cover rounded-full relative z-10 border border-[#C5A059]"
           />
         </div>
@@ -56,27 +56,27 @@ export default function BlessingSection({ guestName = '', onRestart }) {
         {/* Personalized Guest Welcome if provided */}
         {guestName && (
           <div className="mb-4 inline-block px-4 py-1 rounded-full bg-[#FAF4EB] border border-[#C5A059]/40 text-[#791724] font-devanagari text-xs md:text-sm font-semibold">
-            ✨ प्रिय {guestName}, आपकी स्वीकृति के लिए धन्यवाद ✨
+            ✨ प्रिय {guestName}, आपल्या स्वीकृतीबद्दल मनःपूर्वक धन्यवाद ✨
           </div>
         )}
 
         {/* Devotional Prayer Verses */}
         <div className="space-y-4 font-devanagari text-[#2B211D]">
           <p className="text-sm md:text-base text-[#936E2B] font-semibold">
-            माँ महालक्ष्मी के चरणों में हमारी यही प्रार्थना है कि —
+            माता महालक्ष्मीच्या चरणी आमची हीच प्रार्थना आहे की —
           </p>
 
           <div className="p-4 rounded-2xl bg-gradient-to-b from-[#FAF4EB] to-[#F2E8D8]/50 border border-[#C5A059]/40 text-sm md:text-base leading-relaxed space-y-1 text-[#2B211D] font-medium">
-            <p>आपके जीवन में सुख हो,</p>
-            <p>घर में समृद्धि हो,</p>
-            <p>मन में शांति हो,</p>
-            <p className="text-[#791724] font-semibold">और हर कदम पर माँ का आशीर्वाद हो।</p>
+            <p>आपल्या जीवनात सुख असो,</p>
+            <p>घरात समृद्धी नांदावी,</p>
+            <p>मनात शांतता लाभो,</p>
+            <p className="text-[#791724] font-semibold">आणि प्रत्येक पावलावर मातेचा आशीर्वाद असो.</p>
           </div>
 
           <p className="text-sm md:text-base text-[#5E4A40] leading-relaxed pt-2">
-            माँ महालक्ष्मी एवं गौरी माता<br />
-            आपके परिवार को सदैव<br />
-            <span className="text-[#791724] font-semibold">सुख, सौभाग्य और समृद्धि</span> प्रदान करें।
+            माता महालक्ष्मी व गौरी माता<br />
+            आपल्या परिवारास सदैव<br />
+            <span className="text-[#791724] font-semibold">सुख, समृद्धी आणि उत्तम आरोग्य</span> प्रदान करो.
           </p>
 
           <LotusDivider />
@@ -84,15 +84,15 @@ export default function BlessingSection({ guestName = '', onRestart }) {
           {/* Salutation & Hosts */}
           <div className="pt-1">
             <p className="text-base md:text-lg font-bold text-[#791724] tracking-wide mb-3">
-              🙏 सादर आमंत्रण एवं शुभकामनाएँ 🙏
+              🙏 सस्नेह निमंत्रक 🙏
             </p>
 
             <div className="inline-block px-6 py-2.5 rounded-2xl bg-[#FAF4EB] border border-[#C5A059]/60 shadow-sm">
               <p className="text-base md:text-lg font-bold text-[#791724]">
-                विनोद टिकले एवं कल्पना टिकले
+                श्री विनोदराव टिकले व सौ. कल्पना टिकले
               </p>
               <p className="text-xs text-[#936E2B] font-medium mt-0.5">
-                सप्रेम निमंत्रण
+                सस्नेह निमंत्रक - टिकले परिवार, यवतमाळ
               </p>
             </div>
           </div>
@@ -107,12 +107,12 @@ export default function BlessingSection({ guestName = '', onRestart }) {
             {copied ? (
               <>
                 <Check className="w-4 h-4 text-green-700" />
-                <span className="text-green-700">लिंक कॉपी हो गया!</span>
+                <span className="text-green-700">लिंक कॉपी झाली!</span>
               </>
             ) : (
               <>
                 <Share2 className="w-4 h-4 text-[#791724]" />
-                <span>आमंत्रण साझा करें</span>
+                <span>निमंत्रण शेअर करा</span>
               </>
             )}
           </button>
@@ -122,7 +122,7 @@ export default function BlessingSection({ guestName = '', onRestart }) {
             className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs md:text-sm font-devanagari font-medium text-[#5E4A40] bg-[#FAF4EB] hover:bg-[#F2E8D8] border border-[#C5A059]/60 shadow-sm transition-all active:scale-95"
           >
             <RotateCcw className="w-3.5 h-3.5" />
-            <span>पुनः दर्शन ↺</span>
+            <span>पुन्हा पहा ↺</span>
           </button>
         </div>
       </div>

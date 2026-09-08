@@ -12,9 +12,9 @@ export default function InvitationDetails({ onProceedToRSVP }) {
 
   const handleAddToCalendar = () => {
     const event = {
-      title: "श्री महालक्ष्मी गौरी पूजन एवं प्रसाद भोज | टिकले परिवार",
-      description: "माँ महालक्ष्मी एवं गौरी माता के पावन पूजन एवं प्रसाद भोज के शुभ अवसर पर स्नेहिल आमंत्रण।",
-      location: "हमारा स्नेहिल निवास, सिंघानिया नगर, अरनी रोड, यवतमाल",
+      title: "श्री महालक्ष्मी गौरी पूजन व महाप्रसाद भोजन | टिकले परिवार",
+      description: "श्री महालक्ष्मी व माता गौरीच्या पावन पूजन व महाप्रसाद भोजनाच्या शुभ प्रसंगी सस्नेह निमंत्रण।",
+      location: "आमचे निवासस्थान, सिंघानिया नगर, आर्णी रोड, यवतमाळ",
       startTime: "20260918T190000",
       endTime: "20260918T223000",
     };
@@ -39,7 +39,7 @@ export default function InvitationDetails({ onProceedToRSVP }) {
           <span className="text-xs text-[#936E2B]">卐</span>
         </div>
         <p className="font-devanagari text-xs md:text-sm text-[#936E2B] font-medium">
-          एवं स्नेहिल प्रसाद भोज आमंत्रण
+          व सस्नेह महाप्रसाद भोजन निमंत्रण
         </p>
       </div>
 
@@ -53,27 +53,27 @@ export default function InvitationDetails({ onProceedToRSVP }) {
           {/* Date */}
           <div className="flex flex-col items-center justify-center p-2.5 rounded-xl bg-white/60 border border-[#C5A059]/20">
             <Calendar className="w-5 h-5 text-[#791724] mb-1" />
-            <span className="text-xs text-[#5E4A40]">दिनांक</span>
+            <span className="text-xs text-[#5E4A40]">शुभ दिनांक</span>
             <span className="text-sm md:text-base font-bold text-[#791724]">
-              18 सितंबर 2026
+              १८ सप्टेंबर २०२६
             </span>
           </div>
 
           {/* Time */}
           <div className="flex flex-col items-center justify-center p-2.5 rounded-xl bg-white/60 border border-[#C5A059]/20">
             <Clock className="w-5 h-5 text-[#791724] mb-1" />
-            <span className="text-xs text-[#5E4A40]">शुभ समय</span>
+            <span className="text-xs text-[#5E4A40]">शुभ वेळ</span>
             <span className="text-sm md:text-base font-bold text-[#791724]">
-              सायं 7:00 बजे
+              सायंकाळी ७:०० वा.
             </span>
           </div>
 
           {/* Venue */}
           <div className="flex flex-col items-center justify-center p-2.5 rounded-xl bg-white/60 border border-[#C5A059]/20">
             <MapPin className="w-5 h-5 text-[#791724] mb-1" />
-            <span className="text-xs text-[#5E4A40]">स्थान</span>
+            <span className="text-xs text-[#5E4A40]">स्थळ</span>
             <span className="text-sm md:text-base font-bold text-[#791724]">
-              हमारा स्नेहिल निवास
+              स्नेहिल निवास
             </span>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function InvitationDetails({ onProceedToRSVP }) {
         {/* Complete Address Line */}
         <div className="text-center font-devanagari mt-3 mb-2 px-2">
           <p className="text-xs md:text-sm text-[#5E4A40]">
-            📍 <span className="font-semibold text-[#2B211D]">सिंघानिया नगर, अरनी रोड, यवतमाल</span>
+            📍 <span className="font-semibold text-[#2B211D]">सिंघानिया नगर, आर्णी रोड, यवतमाळ</span>
           </p>
           {/* Action pills for Maps & Calendar */}
           <div className="flex justify-center items-center gap-3 mt-2.5">
@@ -90,14 +90,14 @@ export default function InvitationDetails({ onProceedToRSVP }) {
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-devanagari font-medium text-[#791724] bg-[#F2E8D8] hover:bg-[#E8CA82]/50 border border-[#C5A059]/50 transition-colors"
             >
               <Map className="w-3.5 h-3.5" />
-              <span>गूगल मैप्स पर देखें</span>
+              <span>गूगल मॅप्सवर पहा</span>
             </button>
             <button
               onClick={handleAddToCalendar}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-devanagari font-medium text-[#791724] bg-[#F2E8D8] hover:bg-[#E8CA82]/50 border border-[#C5A059]/50 transition-colors"
             >
               <CalendarPlus className="w-3.5 h-3.5" />
-              <span>कैलेंडर में जोड़ें</span>
+              <span>कॅलेंडरमध्ये जोडा</span>
             </button>
           </div>
         </div>
@@ -107,25 +107,23 @@ export default function InvitationDetails({ onProceedToRSVP }) {
         {/* Detailed Sacred Invitation Message */}
         <div className="space-y-4 text-center font-devanagari text-[#2B211D]">
           <p className="text-sm md:text-base leading-relaxed">
-            माँ महालक्ष्मी एवं गौरी माता के<br />
-            पावन पूजन एवं प्रसाद भोज के शुभ अवसर पर<br />
-            आपकी स्नेहमयी उपस्थिति हमारे लिए<br />
-            <span className="text-[#791724] font-semibold">अत्यंत हर्ष एवं सौभाग्य का विषय होगी।</span>
+            माता महालक्ष्मी व गौरी पूजनाच्या<br />
+            पावन पर्वावर आणि महाप्रसाद भोजनास<br />
+            आपली स्नेहमयी उपस्थिती आमच्यासाठी<br />
+            <span className="text-[#791724] font-semibold">अत्यंत आनंद व सौभाग्याची ठरेल.</span>
           </p>
 
           <p className="text-xs md:text-sm text-[#5E4A40] leading-relaxed">
-            अतः आपसे सादर निवेदन है कि<br />
-            इस शुभ अवसर पर पधारकर<br />
-            माँ महालक्ष्मी का आशीर्वाद प्राप्त करें<br />
-            एवं हमारे प्रसाद भोज को अपनी उपस्थिति से<br />
-            सुस्वादु एवं मंगलमय बनाएँ।
+            तरी आपण सर्वांनी सहकुटुंब सहपरिवार उपस्थित राहून<br />
+            माता महालक्ष्मीचे दर्शन व कृपाप्रसाद ग्रहण करावा,<br />
+            हीच नम्र विनंती.
           </p>
 
           {/* Highlighted Quote Box */}
           <div className="p-3.5 md:p-4 rounded-xl bg-gradient-to-r from-[#FFF5E6] via-[#FAF4EB] to-[#FFF5E6] border border-[#E8CA82] shadow-sm my-3">
             <p className="font-devanagari text-base md:text-lg text-[#791724] font-bold tracking-wide">
-              "आपका आगमन ही हमारे लिए<br />
-              सबसे सुंदर उपहार है।"
+              "आपले आगमन हेच आमच्यासाठी<br />
+              सर्वात मोठे व सुंदर आशीर्वाद आहे."
             </p>
           </div>
         </div>
@@ -146,7 +144,7 @@ export default function InvitationDetails({ onProceedToRSVP }) {
           onClick={handleRSVPClick}
           className="w-full py-3.5 px-8 rounded-full text-base md:text-lg font-devanagari font-semibold tracking-wide bg-gradient-to-r from-[#791724] via-[#A32832] to-[#791724] text-[#FFFDF9] border border-[#E8CA82] shadow-card-lux hover:shadow-gold-glow hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 group"
         >
-          <span>🌸 उपस्थिति की पुष्टि करें 🌸</span>
+          <span>🌸 उपस्थितीची नोंद करा 🌸</span>
           <ChevronRight className="w-4 h-4 text-[#E8CA82] group-hover:translate-x-1 transition-transform" />
         </button>
       </div>

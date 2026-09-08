@@ -27,7 +27,7 @@ export default function App() {
 
   const navItems = [
     { key: STEPS.DARSHAN, label: 'दर्शन' },
-    { key: STEPS.INVITATION, label: 'आमंत्रण' },
+    { key: STEPS.INVITATION, label: 'निमंत्रण' },
     { key: STEPS.BLESSING, label: 'आशीर्वाद' },
   ];
 
@@ -41,7 +41,7 @@ export default function App() {
 
       {/* Top Breadcrumb Navigation (Visible after opening gate) */}
       {currentStep !== STEPS.GATE && (
-        <nav className="fixed top-3 left-3 z-40" aria-label="आमंत्रण चरण">
+        <nav className="fixed top-3 left-3 z-40" aria-label="निमंत्रण टप्पे">
           <div className="flex items-center gap-1.5 p-1 rounded-full bg-[#140802]/90 backdrop-blur-md border border-[#F5C862]/50 shadow-lg">
             {navItems.map((item) => {
               const isActive = currentStep === item.key;
