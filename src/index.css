@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-bright: #FFF2A8;
+  --color-gold-warm: #F5C862;
+  --color-gold-dark: #B8860B;
+  --color-maroon-rich: #80131E;
+  --color-maroon-dark: #4A0B12;
+  --color-ivory: #FFFDF9;
+  --color-amber-glow: #F39C12;
+
+  --font-devanagari: 'Rozha One', 'Tiro Devanagari Hindi', serif;
+  --font-traditional: 'Yatra One', cursive;
+  --font-body: 'Tiro Devanagari Hindi', 'Noto Serif Devanagari', serif;
+  --font-serif: 'Cinzel', 'Marcellus', serif;
+  --font-sans: 'Poppins', sans-serif;
+}
+
+/* Royal Golden Textured Background */
+.royal-gold-bg {
+  background-color: #140802;
+  background-image: url('/assets/images/royal-devotional-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Large Radiant Gold Text */
+.gold-text-radiant {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF4B8 30%, #F5C862 70%, #D49B28 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.9));
+}
+
+/* Enhanced Royal Card Box with Darker Backing for Crisp Text Contrast */
+.royal-glass-card {
+  background: linear-gradient(180deg, rgba(20, 9, 3, 0.92) 0%, rgba(30, 13, 5, 0.94) 100%);
+  backdrop-filter: blur(16px);
+  border: 2px solid rgba(245, 200, 98, 0.55);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85), inset 0 0 30px rgba(245, 200, 98, 0.12);
+}
+
+.gold-border-highlight {
+  border: 2px solid #F5C862;
+  box-shadow: 0 0 25px rgba(245, 200, 98, 0.45);
+}
+
+/* 3D Gate */
+.perspective-gate {
+  perspective: 1400px;
+}
+
+.door-left {
+  transform-origin: left center;
+  transition: transform 2.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.door-right {
+  transform-origin: right center;
+  transition: transform 2.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.door-open-left {
+  transform: rotateY(-115deg) translateZ(10px);
+}
+
+.door-open-right {
+  transform: rotateY(115deg) translateZ(10px);
+}
+
+/* Diya Flame */
+@keyframes flameWobble {
+  0%, 100% {
+    transform: scale(1) rotate(-1.5deg);
+    filter: drop-shadow(0 0 8px rgba(255, 180, 0, 0.9)) drop-shadow(0 0 18px rgba(255, 120, 0, 0.7));
+  }
+  50% {
+    transform: scale(1.1, 0.94) rotate(2deg);
+    filter: drop-shadow(0 0 14px rgba(255, 210, 30, 1)) drop-shadow(0 0 28px rgba(255, 100, 0, 0.8));
+  }
+}
+
+.diya-flame {
+  animation: flameWobble 1.8s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #140802;
+}
+::-webkit-scrollbar-thumb {
+  background: #F5C862;
+  border-radius: 4px;
+}
